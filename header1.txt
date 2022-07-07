@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+		
+	<head>
+		<style>
+			html,body
+			{
+				margin:0;
+				padding:0;
+				height:100%;
+			}
+			.flex-header-container
+			{
+				display:flex;
+				width:100%;
+				justify-content:space-between;
+				align-items:center;
+				background-color:rgb(230,255,230);
+			}
+			.flex-header-portalname-logo-container
+			{
+				width:40%;
+				display:flex;
+				justify-content:flex-start;
+				align-items:center;
+				
+			}
+			.flex-header-portalname-container
+			{
+				display:flex;
+				flex-direction:column;
+				justify-content:center;
+				align-items:center;
+				margin:10px;
+				margin-right:30px;
+			}
+			.flex-header-logo-item
+			{
+				background-image:url('ltlogo.png');
+				background-size:100% 100%;
+				width:20px;
+				height:20px;
+			}	
+			.flex-header-search-profile-container
+			{
+				display:flex;
+				justify-content:space-between;
+				align-items:center;
+				width:44%;
+				
+			}
+			.flex-header-profile-container
+			{
+				display:flex;
+				justify-content:space-between;
+				align-items:center;
+				width:35%;
+				
+			}
+			.flex-header-profile-bell
+			{
+				background-image:url('bell.png');
+				background-size:100% 100%;
+				width:20px;
+				height:20px;
+				margin-right:20px;
+			}
+			.flex-header-profile-name-designation
+			{
+				display:flex;
+				flex-direction:column;
+				justify-content:center;
+				align-items:center;
+			}
+			.flex-header-profile-photo
+			{
+				background-image:url('profile.png');
+				background-size:100% 100%;
+				width:30px;
+				height:30px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="flex-header-container">
+			<div class="flex-header-portalname-logo-container">
+				<div class="flex-header-portalname-container">
+					<div><label style="font-size:130%;font-weight:bolder;">Digital Cockpit</div>
+					<div><label style="font-size:70%;">Integrated Project Dashboard</label></div>
+				</div>
+				<div class="flex-header-logo-item"></div>
+			</div>
+			<div class="flex-header-chennaiphase2"><label style="font-weight:bold;">Chennai Airport Phase II</div>
+			<div class="flex-header-search-profile-container">
+					<input type="search" name="searchbox" style="padding:7px;border-radius:10px;">
+				<div class="flex-header-profile-container">
+					<div class="flex-header-profile-bell"></div>
+					<div class="flex-header-profile-name-designation">
+						<div><label>Pradyumna Reddy</label></div>
+						<div><label style="font-size:70%;">Software Engineer</label></div>
+					</div>
+					<div class="flex-header-profile-photo"></div>
+				</div>
+					
+			</div>	
+		</div>	
+		
+	</body>
+</html>	
