@@ -1,0 +1,34 @@
+<mat-toolbar style="background-color:white">
+  <mat-toolbar-row style="justify-content:space-between">
+    <div style="display:flex;">
+      <div style="display:flex;flex-direction:column;justify-content:center;align-content:center">
+        <span>Digital Cockpit</span>
+        <span>Best website</span>
+      </div>
+      <div>
+        
+      </div>
+    </div>
+    <div>
+      <span>Digital Cockpit</span>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>
+<mat-tab-group style="width:90%;background-color: #f5f5f5;margin-left:auto;margin-right:auto;">
+  <mat-tab label="First"> 
+  </mat-tab>
+  <mat-tab label="Second"> 
+    <nav mat-tab-nav-bar>
+      <a mat-tab-link *ngFor="let link of navLinks" [routerLink]="link.path" routerLinkActive>{{link.label}}</a>
+    </nav>
+  </mat-tab>
+  <mat-tab label="Third">
+  
+    <nav mat-tab-nav-bar>
+      <a mat-tab-link *ngFor="let link of navLinks" [routerLink]="link.path" routerLinkActive>{{link.label}}</a>
+    </nav>
+  </mat-tab>
+</mat-tab-group>
+
+
+<router-outlet></router-outlet>
